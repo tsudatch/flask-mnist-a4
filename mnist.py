@@ -6,7 +6,7 @@ from tensorflow.keras.models import Sequential, load_model
 from tensorflow.keras.preprocessing import image
 from keras.optimizers import adam
 import numpy as np
-
+import winpty
 
 classes = ["0","1","2","3","4","5","6","7","8","9"]
 image_size = 28
