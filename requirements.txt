@@ -1,7 +1,7 @@
 absl-py==1.4.0
 alabaster @ file:///home/ktietz/src/ci/alabaster_1611921544520/work
 anaconda-client==1.11.2
-anaconda-navigator==2.4.0
+anaconda-navigator==2.4.1
 anaconda-project @ file:///C:/Windows/TEMP/abs_91fu4tfkih/croots/recipe/anaconda-project_1660339890874/work
 anyio @ file:///C:/ci/anyio_1644481856696/work/dist
 appdirs==1.4.4
@@ -31,7 +31,7 @@ boltons @ file:///C:/b/abs_707eo7c09t/croot/boltons_1677628723117/work
 Bottleneck @ file:///C:/Windows/Temp/abs_3198ca53-903d-42fd-87b4-03e6d03a8381yfwsuve8/croots/recipe/bottleneck_1657175565403/work
 brotlipy==0.7.0
 cachetools==5.3.0
-certifi @ file:///C:/b/abs_85o_6fm0se/croot/certifi_1671487778835/work/certifi
+certifi @ file:///C:/b/abs_4a0polqwty/croot/certifi_1683875377622/work/certifi
 cffi @ file:///C:/b/abs_49n3v2hyhr/croot/cffi_1670423218144/work
 chardet @ file:///C:/ci_310/chardet_1642114080098/work
 charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
