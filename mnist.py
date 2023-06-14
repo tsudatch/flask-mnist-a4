@@ -1,12 +1,11 @@
 import os
-#import tensorflow.keras.optimizer
+from tensorflow.keras.optimizers import adam
 from flask import Flask, request, redirect, render_template, flash
 from werkzeug.utils import secure_filename
 from tensorflow.keras.models import Sequential, load_model
 from tensorflow.keras.preprocessing import image
-from keras.optimizers import adam
 import numpy as np
-import winpty
+from winpty import PtyProcess
 
 classes = ["0","1","2","3","4","5","6","7","8","9"]
 image_size = 28
