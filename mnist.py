@@ -1,12 +1,17 @@
 import os
-#import tensorflow.keras.optimizer
-from flask import Flask, request, redirect, render_template, flash
-from werkzeug.utils import secure_filename
-from tensorflow.keras.models import Sequential, load_model
-from tensorflow.keras.preprocessing import image
-from keras.optimizers import adam
+from keras.datasets import mnist
+from keras.layers import Dense, Dropout, Flatten, Activation
+from keras.layers import Conv2D, MaxPooling2D
+from keras.models import Sequential, load_model
+from keras.utils.np_utils import to_categorical
+from keras.utils.vis_utils import plot_model
 import numpy as np
-import winpty
+import matplotlib.pyplot as plt
+from tensorflow.keras import optimizers
+from tensorflow import keras
+from keras.optimizers import adam
+import cv2
+from winpty import PtyProcess
 
 classes = ["0","1","2","3","4","5","6","7","8","9"]
 image_size = 28
