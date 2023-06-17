@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import os
 from keras.datasets import mnist
 from keras.layers import Dense, Dropout, Flatten, Activation
@@ -124,4 +124,4 @@ def upload_file():
 if __name__ == "__main__":
    port = int(os.environ.get('PORT', 8080))
    app.run(host ='0.0.0.0',port = port)
->>>>>>> 59927dc7c68102616d4cbdcbbd431ba25dfb01f4
+
