@@ -5,27 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Number Classifier</title>
-    <link rel="stylesheet" href="./static/stylesheet.css">
+    <link rel="stylesheet" href="./static/stylesheet.css">   
 </head>
 <body>
     <header>
         <img class="header_img" src="https://aidemyexstorage.blob.core.windows.net/aidemycontents/1621500180546399.png" alt="Aidemy">
         <a class="header-logo" href="#">Number Classifier</a>
     </header>
+        <div class="main">
+            <h2> AIが送信された手書き数字画像を識別します</h2>
+            <p style="font-weight : bold" >画像を送信してください</p>
+            <form method="POST" enctype="multipart/form-data" id="form">
+                    <input class="file_choose" type="file" name="file" onchange="inputChange()" id="fileInput" style="font-weight : bold"  required/>
+                    <input class="btn" value="submit!" type="submit" id="pred" style="font-weight : bold" >
+                    <div id="previewContainer">  
+                        <img id="previewImage" src="#" alt="" style="max-width: 150px; max-height: 150px;">
+                    </div>
+            </form>
+            <div class="answer" id="answer"  style="font-weight : bold">{{answer}}</div>                     
+                <footer>
+                    <img class="footer_img" src="https://aidemyexstorage.blob.core.windows.net/aidemycontents/1621500180546399.png" alt="Aidemy">
+                    <small>&copy; 2019 Aidemy, inc.</small>
+                </footer>
+         </div>  
+    <script>
+        'use script'
+        const answer = document.getElementById('answer');
+        const fileInput = document.getElementById('fileInput');
+        const previewImage = document.getElementById('previewImage');
+        const boundingImage = document.getElementById('pred');
 
-    <div class="main">
-        <h2> AIが送信された画像の数字を識別します</h2>
-        <p>画像を送信してください</p>
-        <form method="POST" enctype="multipart/form-data">
-            <input class="file_choose" type="file" name="file">
-            <input class="btn" value="submit!" type="submit">
-        </form>
-        <div class="answer">{{answer}}</div>
-    </div>
+        fileInput.addEventListener('change', function () {
+            const file = fileInput.files[0];
+            if (file) {
+                const reader = new FileReader();                
+                reader.addEventListener('load', function () {
+                    previewImage.src = reader.result;                  
+                });
+                reader.readAsDataURL(file);
+            } else {
+                previewImage.src = '';
+            }
+        }); 
 
-    <footer>
-        <img class="footer_img" src="https://aidemyexstorage.blob.core.windows.net/aidemycontents/1621500180546399.png" alt="Aidemy">
-        <small>&copy; 2019 Aidemy, inc.</small>
-    </footer>
+
+    </script>
 </body>
 </html>

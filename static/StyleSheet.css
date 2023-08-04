@@ -1,5 +1,5 @@
 ﻿header {
-    background-color: #76B55B;
+    background-color: #1ec7bb;
     height: 60px;
     margin: -8px;
     display: flex;
@@ -18,13 +18,78 @@
     margin: 15px 25px;
 }
 
+
+label {
+    padding: 10px 40px;
+    color: #ffffff;
+    background-color: #384878;
+    cursor: pointer;
+}
+
+
+
+p {
+    margin: 10px 0 0 0;
+}
+
+input[type='file'] {
+    color: rgb(31, 41, 55);
+    cursor: pointer;
+    border: 2px solid #000000;
+    border-radius: 0.3rem;
+    padding-right: 0.5rem;
+    width: 21rem;
+    transition: .4s;
+   
+    
+    
+}
+    input[type='file']:hover {
+        font-weight: bold;
+    }
+
+    ::file-selector-button,
+    ::-webkit-file-upload-button {
+        background-color: #1ec7bb;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-right: 0px solid rgb(191, 194, 199);
+        padding: 0.25rem 1rem;
+        margin-right: 1rem;
+        transition: .4s;
+        font-weight: bold;
+    }
+
+::file-selector-button:hover {
+    background: #00bc40;
+}
+
+
+
+.btn {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #FFF;
+    background: #1ec7bb;
+    transition: .4s;
+    margin: 20px 0px 0px 0px;
+    
+}
+.btn:hover {
+    background: #00bc40;
+}
 .main {
     height: 370px;
+    padding-bottom: 25px; /*←footerの高さ*/
 }
 
 h2 {
     color: #444444;
-    margin: 90px 0px;
+    margin: 30px 0px;
     text-align: center;
 }
 
@@ -40,15 +105,39 @@ p {
     text-align: center;
 }
 
+
+.p {
+    color: #444444;
+    margin: 70px 0px 30px 0px;
+    text-align: center;
+}
 form {
     text-align: center;
 }
+tr {
+    text-align: center;
+}
+
+td {
+    max-width:960px;
+    display: flex;
+    text-align: center;
+}
+table {
+    max-width: 960px;
+    display: flex;
+    text-align: center;
+}
+
+
 
 footer {
     background-color: #F7F7F7;
     height: 110px;
     margin: -8px;
-    position: relative;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
 
 .footer_img {
